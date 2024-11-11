@@ -31,8 +31,12 @@ This project involves building an advanced Retrieval-Augmented Generation (RAG) 
       - **Character Text Splitting**: Text is split into manageable chunks for embedding.
       - **Insert into Supabase**: The processed document embeddings are stored in the vector database (Supabase) for later retrieval by the RAG AI agent.
 
+
 ## Integration into the Website
 The project includes embedding the RAG AI chat interface on a website, allowing visitors to interact with the AI assistant. The assistant is configured to provide detailed information about "José," responding to user queries 24/7. This integration creates a dynamic and interactive experience for users, backed by real-time data processing and retrieval.
+
+![Chatbot](./assets/chatbot.png)
+
 
 ## Technology Stack
 - **Frontend**: Custom chat interface integrated into the website.
@@ -46,23 +50,15 @@ The project includes embedding the RAG AI chat interface on a website, allowing 
 ## Workflow Diagram
 The workflow diagram illustrates the flow of data and processes within the `n8n` workflow. It showcases the various nodes involved, from Google Drive file monitoring to text extraction, embedding generation, and vector database storage, ultimately supporting the RAG agent’s efficient response generation in the chat interface.
 
+
+![n8n Workflow Diagram](./assets/n8n-workflow-diagram.png)
+
+
 ## Future Enhancements
 Potential future features include:
 - Expanding integration with other file storage systems.
 - Adding role-based access control for data within the chat.
 - Advanced analytics to track and improve user engagement.
-
-## How to Run
-1. **Clone this repository**.
-2. **Set up the n8n Workflow**:
-   - Ensure you have access to Google Drive and Supabase.
-   - Set up OpenAI API credentials.
-3. **Integrate with Website**:
-   - Embed the chat interface on your website.
-   - Configure webhook endpoints as needed.
-4. **Monitor and Maintain**:
-   - Regularly check the vector database for updates.
-   - Monitor chat logs and interactions to improve response accuracy.
 
 This project demonstrates a sophisticated integration of automated document management, AI-powered chat functionality, and real-time data retrieval, providing a seamless and efficient user experience on the website.
 
